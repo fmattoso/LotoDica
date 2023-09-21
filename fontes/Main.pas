@@ -7,7 +7,7 @@ uses
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
   FMX.ListView.Types, FMX.ListView.Appearances, FMX.ListView.Adapters.Base,
   FMX.StdCtrls, FMX.Edit, FMX.EditBox, FMX.NumberBox, FMX.Controls.Presentation,
-  FMX.Layouts, FMX.ListView;
+  FMX.Layouts, FMX.ListView, FMX.ListBox, FMX.ExtCtrls;
 
 type
   TfrmMain = class(TForm)
@@ -18,6 +18,11 @@ type
     Label2: TLabel;
     NumberBox2: TNumberBox;
     btnGerarNumeros: TCornerButton;
+    btnLista: TSpeedButton;
+    btnVolante: TSpeedButton;
+    Label3: TLabel;
+    cbModalidade: TComboBox;
+    ImageViewer1: TImageViewer;
     procedure Ordenar(var dezenas: string; tmo: integer = 3);
     procedure btnGerarNumerosClick(Sender: TObject);
   private

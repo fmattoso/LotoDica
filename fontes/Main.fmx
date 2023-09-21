@@ -29,39 +29,75 @@ object frmMain: TfrmMain
     TabOrder = 1
     ColumnCollection = <
       item
-        Value = 10.005332977381740000
+        Value = 10.029790214706500000
       end
       item
-        Value = 79.997341190592040000
+        Value = 40.097776805150030000
       end
       item
-        Value = 9.997325832026222000
+        Value = 39.875214258133120000
+      end
+      item
+        Value = 9.997218722010349000
       end>
     ControlCollection = <
       item
         Column = 1
-        Control = Label1
+        Control = btnLista
+        Row = 0
+      end
+      item
+        Column = 2
+        Control = btnVolante
         Row = 0
       end
       item
         Column = 1
-        Control = NumberBox1
-        Row = 1
-      end
-      item
-        Column = 1
-        Control = Label2
+        ColumnSpan = 2
+        Control = cbModalidade
         Row = 2
       end
       item
         Column = 1
-        Control = NumberBox2
+        ColumnSpan = 2
+        Control = Label3
+        Row = 1
+      end
+      item
+        Column = 1
+        ColumnSpan = 2
+        Control = Label1
         Row = 3
       end
       item
         Column = 1
-        Control = btnGerarNumeros
+        ColumnSpan = 2
+        Control = NumberBox1
         Row = 4
+      end
+      item
+        Column = 1
+        ColumnSpan = 2
+        Control = Label2
+        Row = 5
+      end
+      item
+        Column = 1
+        ColumnSpan = 2
+        Control = NumberBox2
+        Row = 6
+      end
+      item
+        Column = 1
+        ColumnSpan = 2
+        Control = btnGerarNumeros
+        Row = 7
+      end
+      item
+        Column = 1
+        ColumnSpan = 2
+        Control = ImageViewer1
+        Row = 8
       end>
     RowCollection = <
       item
@@ -69,25 +105,48 @@ object frmMain: TfrmMain
         Value = 50.000000000000000000
       end
       item
+        SizeStyle = Absolute
+        Value = 34.000000000000000000
+      end
+      item
+        SizeStyle = Absolute
+        Value = 24.000000000000000000
+      end
+      item
+        SizeStyle = Auto
+        Value = 100.000000000000000000
+      end
+      item
+        SizeStyle = Auto
+        Value = 100.000000000000000000
+      end
+      item
         SizeStyle = Auto
         Value = 50.000000000000000000
       end
       item
         SizeStyle = Auto
-        Value = 33.333333333333340000
+        Value = 16.666666666666670000
       end
       item
         SizeStyle = Auto
-        Value = 100.000000000000000000
+        Value = 20.000000000000000000
       end
       item
-        Value = 100.000000000000000000
+        SizeStyle = Auto
+        Value = 25.000000000000000000
+      end
+      item
+        Value = 50.000000000000000000
+      end
+      item
+        Value = 50.000000000000000000
       end>
     object Label1: TLabel
       Align = Client
       Margins.Left = 6.000000000000000000
       Margins.Top = 8.000000000000000000
-      Size.Width = 115.595954895019500000
+      Size.Width = 115.558944702148400000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
       Text = 'Dezenas:'
@@ -102,16 +161,16 @@ object frmMain: TfrmMain
       Max = 20.000000000000000000
       Value = 15.000000000000000000
       VertIncrement = 1.000000000000000000
-      Size.Width = 121.595954895019500000
-      Size.Height = 22.000000000000000000
+      Size.Width = 121.558944702148400000
+      Size.Height = 50.000000000000000000
       Size.PlatformDefault = False
     end
     object Label2: TLabel
       Align = Client
       Margins.Left = 6.000000000000000000
       Margins.Top = 8.000000000000000000
-      Size.Width = 115.595954895019500000
-      Size.Height = 17.000000000000000000
+      Size.Width = 115.558944702148400000
+      Size.Height = 42.000000000000000000
       Size.PlatformDefault = False
       Text = 'Jogos:'
       TabOrder = 2
@@ -124,18 +183,18 @@ object frmMain: TfrmMain
       Min = 1.000000000000000000
       Value = 1.000000000000000000
       VertIncrement = 1.000000000000000000
-      Size.Width = 121.595954895019500000
-      Size.Height = 22.000000000000000000
+      Size.Width = 121.558944702148400000
+      Size.Height = 50.000000000000000000
       Size.PlatformDefault = False
     end
     object btnGerarNumeros: TCornerButton
       Align = Top
       Margins.Top = 8.000000000000000000
       Margins.Bottom = 8.000000000000000000
-      Position.X = 15.208106040954590000
-      Position.Y = 102.000000000000000000
+      Position.X = 15.245281219482420000
+      Position.Y = 263.000000000000000000
       Sides = [Top, Left, Bottom, Right]
-      Size.Width = 121.595954895019500000
+      Size.Width = 121.558944702148400000
       Size.Height = 42.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 4
@@ -143,6 +202,53 @@ object frmMain: TfrmMain
       XRadius = 3.000000000000000000
       YRadius = 3.000000000000000000
       OnClick = btnGerarNumerosClick
+    end
+    object btnLista: TSpeedButton
+      Anchors = []
+      Position.X = 38.096950531005860000
+      Size.Width = 15.245281219482420000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'L'
+    end
+    object btnVolante: TSpeedButton
+      Anchors = []
+      Position.X = 76.193901062011720000
+      Size.Width = 60.610328674316410000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'V'
+    end
+    object Label3: TLabel
+      Align = Client
+      Margins.Left = 6.000000000000000000
+      Margins.Top = 8.000000000000000000
+      Size.Width = 115.558944702148400000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Modalidade:'
+      TabOrder = 7
+    end
+    object cbModalidade: TComboBox
+      Align = Client
+      Items.Strings = (
+        'Lotof'#225'cil')
+      ItemIndex = 0
+      Size.Width = 121.558944702148400000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 8
+    end
+    object ImageViewer1: TImageViewer
+      Anchors = []
+      Position.X = 68.402114868164060000
+      Position.Y = 313.000000000000000000
+      Size.Width = 15.245281219482420000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 9
+      Viewport.Width = 11.200000000000000000
+      Viewport.Height = 46.000000000000000000
     end
   end
 end
