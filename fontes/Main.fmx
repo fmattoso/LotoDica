@@ -1,0 +1,148 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'LotoDica'
+  ClientHeight = 480
+  ClientWidth = 640
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object ListView1: TListView
+    ItemAppearanceClassName = 'TListItemAppearance'
+    ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    Align = Client
+    Size.Width = 488.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+  end
+  object GridPanelLayout1: TGridPanelLayout
+    Align = Right
+    Position.X = 488.000000000000000000
+    Size.Width = 152.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    ColumnCollection = <
+      item
+        Value = 10.005332977381740000
+      end
+      item
+        Value = 79.997341190592040000
+      end
+      item
+        Value = 9.997325832026222000
+      end>
+    ControlCollection = <
+      item
+        Column = 1
+        Control = Label1
+        Row = 0
+      end
+      item
+        Column = 1
+        Control = NumberBox1
+        Row = 1
+      end
+      item
+        Column = 1
+        Control = Label2
+        Row = 2
+      end
+      item
+        Column = 1
+        Control = NumberBox2
+        Row = 3
+      end
+      item
+        Column = 1
+        Control = btnGerarNumeros
+        Row = 4
+      end>
+    RowCollection = <
+      item
+        SizeStyle = Auto
+        Value = 50.000000000000000000
+      end
+      item
+        SizeStyle = Auto
+        Value = 50.000000000000000000
+      end
+      item
+        SizeStyle = Auto
+        Value = 33.333333333333340000
+      end
+      item
+        SizeStyle = Auto
+        Value = 100.000000000000000000
+      end
+      item
+        Value = 100.000000000000000000
+      end>
+    object Label1: TLabel
+      Align = Client
+      Margins.Left = 6.000000000000000000
+      Margins.Top = 8.000000000000000000
+      Size.Width = 115.595954895019500000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Dezenas:'
+      TabOrder = 0
+    end
+    object NumberBox1: TNumberBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      TabOrder = 1
+      Cursor = crIBeam
+      Min = 15.000000000000000000
+      Max = 20.000000000000000000
+      Value = 15.000000000000000000
+      VertIncrement = 1.000000000000000000
+      Size.Width = 121.595954895019500000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label2: TLabel
+      Align = Client
+      Margins.Left = 6.000000000000000000
+      Margins.Top = 8.000000000000000000
+      Size.Width = 115.595954895019500000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Jogos:'
+      TabOrder = 2
+    end
+    object NumberBox2: TNumberBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      TabOrder = 3
+      Cursor = crIBeam
+      Min = 1.000000000000000000
+      Value = 1.000000000000000000
+      VertIncrement = 1.000000000000000000
+      Size.Width = 121.595954895019500000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object btnGerarNumeros: TCornerButton
+      Align = Top
+      Margins.Top = 8.000000000000000000
+      Margins.Bottom = 8.000000000000000000
+      Position.X = 15.208106040954590000
+      Position.Y = 102.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 121.595954895019500000
+      Size.Height = 42.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = 'Gerar N'#250'meros'
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      OnClick = btnGerarNumerosClick
+    end
+  end
+end
